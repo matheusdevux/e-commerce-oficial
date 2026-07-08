@@ -5,7 +5,7 @@ import {ListaProdutos} from './features/produtos/lista-produtos/lista-produtos';
 
 @Component({
   selector: 'app-root',
-  imports: [ListaProdutos],
+  imports: [ListaProdutos, Produto],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
