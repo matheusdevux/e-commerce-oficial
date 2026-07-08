@@ -1,0 +1,21 @@
+ <!-- <div>
+    <h2>Fluxo de dados com if</h2> 
+    @if(mostrarProduto) {
+    <h3>Produto:{{produto}}</h3>
+    }
+    @if(mostrarPreco) {
+    <p>Preço: R$ {{preco}}</p>
+    }
+</div> -->
+<!--<div>
+    <h2>Fluxo de dados com for</h2>
+    @for(item of produtos; track item) {
+    <h3>{{item.nome | uppercase}}</h3>
+    <p>{{item.preco | precoReal}}</p>
+    }
+</div>-->
+<div class="produto-card">
+    <h3>{{produto | uppercase}}</h3>
+    <p>{{preco | precoReal}}</p>
+    <button (click)="selecionarProduto()">Selecionar</button>
+</div>

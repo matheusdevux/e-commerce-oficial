@@ -1,0 +1,9 @@
+<div>
+    @for(item of produtos; track item) {
+    <app-produto 
+    [produto]="item.nome" 
+    [preco]="item.preco"
+    (produtoSelecionado) ="exibirProdutoSelecionado($event)">
+    </app-produto>
+    }
+</div>
