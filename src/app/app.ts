@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 //import { RouterOutlet } from '@angular/router'; //Removed because it is not used in this code snippet
-import { Produto } from './components/produto/produto';
+import { Produto } from './features/produtos/produto/produto';
+import {ListaProdutos} from './features/produtos/lista-produtos/lista-produtos';
 
 @Component({
   selector: 'app-root',
-  imports: [Produto],
+  imports: [ListaProdutos],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
